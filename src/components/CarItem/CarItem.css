@@ -1,0 +1,12 @@
+.CarItem {
+    border: 1px dashed #ccc;
+    width: 400px;
+}
+
+img {
+    max-width: 99%;
+}
+
+p {
+    text-align: center;
+}
