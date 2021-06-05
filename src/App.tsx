@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import CarsList from './components/CarsList/CarsList';
+
 function App() {
+  let cars = [
+    {name: 'Nissan Skyline GTR', year: 1990, cost: 2000000},
+    {name: 'Ferrary', year: 1989, cost: 1000000},
+    {name: 'VAZ2107', year: 1999, cost: 40000}
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <h1 className="title">Бричкопедия</h1>
+        <p className="subtitle">Узнай все о своей бричке</p>
+        <div className="nav">
+          <a href="/all">Все брички</a>
+          <a href="????">Сравнение</a>
+        </div>
+      </div>
+
+      <div className="cars">
+        <CarsList {...cars} />
+      </div>
     </div>
   );
 }
