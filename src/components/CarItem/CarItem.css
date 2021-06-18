@@ -1,6 +1,5 @@
 .CarItem {
-    border: 1px dashed #ccc;
-    width: 400px;
+    width: 350px;
 }
 
 img {
@@ -8,5 +7,11 @@ img {
 }
 
 p {
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 10px;
 }

@@ -7,9 +7,9 @@ function CarItem(car: any) {
 
     return (
         <div className="CarItem">
-            <h3>{car.car.name}</h3>
+            <h2>{car.car.name}</h2>
             <img src={car.car.img} alt="" />
-            <span>Год: {car.car.year}</span>
+            <p>Год: {car.car.year}</p>
             <p>Стоимость: {car.car.cost}руб</p>
         </div>
     )
